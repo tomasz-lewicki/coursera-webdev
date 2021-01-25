@@ -1,3 +1,3 @@
 
-- [module2 solution](/module2)
-- [notes](/notes)
+- [module2 solution](module2)
+- [notes](notes)
