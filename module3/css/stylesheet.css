@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    background-color: gainsboro;
+    font-size: 16px;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 175%;
+}
+
+section{
+    box-sizing: margin-box;
+    position: relative;
+    float: left;
+    background-color: teal;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 10px;
+    padding-top: 50px;
+}
+
+.section-title{
+    background-color: tomato;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    left: 70%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 125%;
+}
+
+.navbar{
+    background-color: blue;
+}
+
+#company-logo{
+    font-size: 150%;
+}
+
+#company-logo > img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+@media (max-width: 767px) /* mobile */
+{
+    section{
+        margin: 1%;
+        width: 98%;
+    }
+}
+
+
+@media (min-width: 768px) /* tablet */
+{
+    section{
+        margin: 1%;
+        width: 48%;
+    }
+}
+
+
+
+@media (min-width: 992px) /* PC */
+{
+    section{
+        margin: 1%;
+        width: 31%;
+    }
+}
+
+
