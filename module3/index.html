@@ -4,7 +4,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
@@ -12,76 +13,158 @@
 
     <nav class="navbar navbar-light bg-secondary">
         <div class="container">
-            <a id="company-logo" class="navbar-brand pull-left" href="#">
+            <a id="company-logo" class="navbar-brand" href="#">
                 <img src="cpu.svg" alt="Company Logo">
                 Food, LLC
             </a>
+            <button class="navbar-toggler d-sm-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </nav>
 
-    <h1>Our Menu</h1>
+
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-primary">
+            <ul><a class="dropdown-item" href="#">Chimken</a></ul>
+            <ul><a class="dropdown-item" href="#">Beef</a></ul>
+            <ul><a class="dropdown-item" href="#">Pork</a></ul>
+        </div>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent"
+        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
 
     <div class="container">
-        
-        <section>
-            <div class="section-title">Beef</div>
-            <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in libero augue. Sed purus sapien,
-                gravida
-                id ipsum vitae, sollicitudin consequat enim. Vivamus ullamcorper mattis metus, nec mollis dolor
-                malesuada sed.
-                Phasellus vitae sem odio. Sed id augue a mi vulputate consequat ac et arcu. Mauris nec viverra purus.
-                Morbi at
-                sodales leo, sit amet porta nisi. Morbi tincidunt, nunc sed laoreet molestie, neque massa viverra velit,
-                sit
-                amet luctus odio quam ultrices nibh. Praesent blandit metus non enim eleifend tempor. Curabitur lectus
-                metus,
-                molestie sodales orci eu, commodo convallis leo. Etiam dignissim sit amet tellus quis ultrices.
-                Vestibulum
-                rhoncus euismod elit in aliquam. Aliquam id facilisis libero.
+
+        <h1 class="text-center">Our Menu</h1>
+        <div class="row">
+            <div class="col-12 bg-danger">
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras volutpat, ex non pellentesque sodales,
+                    lorem nibh vehicula mauris, eget fermentum nibh ex ac leo. In maximus sagittis lobortis.
+                    Pellentesque
+                    euismod ultrices odio, nec feugiat lacus vestibulum quis. Duis at pellentesque tortor. Donec varius
+                    quam
+                    orci, id molestie est facilisis in. Donec et mauris nec nulla aliquet ultricies vitae vel mauris.
+                    Suspendisse aliquam rutrum blandit. Donec egestas arcu quis rhoncus bibendum. Nulla eleifend nibh
+                    vulputate nunc tristique, ullamcorper ornare justo finibus. Donec ultricies risus a faucibus congue.
+                    Vivamus efficitur nibh sit amet sodales aliquet. Nullam mi lorem, tincidunt at tempus vitae, mattis
+                    et
+                    nisi.
+                </p>
+                <p>
+                    Vestibulum lobortis laoreet tempor. Sed dapibus pellentesque purus at tincidunt. Donec bibendum,
+                    tortor
+                    sit amet accumsan mattis, diam turpis tristique diam, vel elementum mi dui ac erat. Class aptent
+                    taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris eu justo maximus,
+                    vehicula eros in, laoreet est. Ut suscipit risus eget vehicula dignissim. Quisque at libero
+                    facilisis,
+                    vestibulum est eget, sollicitudin sapien. Curabitur mauris purus, imperdiet nec tortor placerat,
+                    consectetur tempor quam. Donec consectetur mauris ac ipsum fermentum dictum. Sed egestas justo
+                    metus, ut
+                    mollis massa tempor eget. Etiam sagittis ullamcorper consequat. Fusce eleifend luctus vehicula.
+                    Nullam
+                    porta quis nunc sit amet vulputate.
+                </p>
+                <p>
+                    Curabitur hendrerit porta ligula, nec porta ante ullamcorper et. Sed posuere ligula eget iaculis
+                    accumsan. Donec ac nunc varius, commodo eros et, varius tortor. Maecenas maximus imperdiet neque.
+                    Vestibulum sit amet metus at ex luctus rhoncus quis id eros. Nullam ut urna orci. Class aptent
+                    taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus vitae leo lacinia,
+                    porttitor erat sit amet, sagittis ante. In nec sapien non quam porttitor dictum a sed leo.
+                    Pellentesque
+                    euismod id nibh quis laoreet. Quisque accumsan dictum viverra. Curabitur vitae efficitur enim, ut
+                    consequat tellus. Donec ornare libero vel libero egestas, at maximus diam finibus. Mauris quis
+                    rhoncus
+                    ipsum.
+                </p>
+                <p>
+                    Nullam ultricies felis eu ligula efficitur, vel condimentum sapien congue. Nunc ut ultricies urna,
+                    eget
+                    bibendum neque. Sed fringilla urna ipsum, suscipit tincidunt neque volutpat quis. Ut rutrum enim
+                    quis
+                    ligula dignissim, id posuere nisl vestibulum. Aliquam fermentum enim vitae lectus viverra tincidunt.
+                    Aliquam sit amet lacus eget magna viverra tempor. Suspendisse potenti. Duis quis egestas orci, ut
+                    ultricies mauris. Mauris suscipit non quam ac commodo. Proin vitae blandit leo. Praesent quis
+                    efficitur
+                    ex, non imperdiet neque.
+                </p>
+                <p>
+                    Vestibulum pharetra sollicitudin ligula, ut pellentesque elit molestie et. Nulla suscipit elementum
+                    tortor. Morbi at eros urna. Phasellus nec dapibus eros. Vivamus rhoncus sed magna ut blandit. Ut ut
+                    venenatis enim. Donec et tortor quis purus tempor aliquam id vel nisl. Interdum et malesuada fames
+                    ac
+                    ante ipsum primis in faucibus. Maecenas accumsan sapien et neque commodo tempus. Proin id pulvinar
+                    magna, et convallis tellus. Nam mattis, risus eu tempor porttitor, odio nisl semper lorem, sed
+                    scelerisque ligula eros in orci. Quisque ut libero sit amet nisi finibus eleifend sagittis ut elit.
+                </p>
+                <p>
+
+                    Vestibulum lobortis laoreet tempor. Sed dapibus pellentesque purus at tincidunt. Donec bibendum,
+                    tortor
+                    sit amet accumsan mattis, diam turpis tristique diam, vel elementum mi dui ac erat. Class aptent
+                    taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris eu justo maximus,
+                    vehicula eros in, laoreet est. Ut suscipit risus eget vehicula dignissim. Quisque at libero
+                    facilisis,
+                    vestibulum est eget, sollicitudin sapien. Curabitur mauris purus, imperdiet nec tortor placerat,
+                    consectetur tempor quam. Donec consectetur mauris ac ipsum fermentum dictum. Sed egestas justo
+                    metus, ut
+                    mollis massa tempor eget. Etiam sagittis ullamcorper consequat. Fusce eleifend luctus vehicula.
+                    Nullam
+                    porta quis nunc sit amet vulputate.
+                </p>
+                <p>
+                    Curabitur hendrerit porta ligula, nec porta ante ullamcorper et. Sed posuere ligula eget iaculis
+                    accumsan. Donec ac nunc varius, commodo eros et, varius tortor. Maecenas maximus imperdiet neque.
+                    Vestibulum sit amet metus at ex luctus rhoncus quis id eros. Nullam ut urna orci. Class aptent
+                    taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus vitae leo lacinia,
+                    porttitor erat sit amet, sagittis ante. In nec sapien non quam porttitor dictum a sed leo.
+                    Pellentesque
+                    euismod id nibh quis laoreet. Quisque accumsan dictum viverra. Curabitur vitae efficitur enim, ut
+                    consequat tellus. Donec ornare libero vel libero egestas, at maximus diam finibus. Mauris quis
+                    rhoncus
+                    ipsum.
+                </p>
+                <p>
+                    Nullam ultricies felis eu ligula efficitur, vel condimentum sapien congue. Nunc ut ultricies urna,
+                    eget
+                    bibendum neque. Sed fringilla urna ipsum, suscipit tincidunt neque volutpat quis. Ut rutrum enim
+                    quis
+                    ligula dignissim, id posuere nisl vestibulum. Aliquam fermentum enim vitae lectus viverra tincidunt.
+                    Aliquam sit amet lacus eget magna viverra tempor. Suspendisse potenti. Duis quis egestas orci, ut
+                    ultricies mauris. Mauris suscipit non quam ac commodo. Proin vitae blandit leo. Praesent quis
+                    efficitur
+                    ex, non imperdiet neque.
+                </p>
+                <p>
+                    Vestibulum pharetra sollicitudin ligula, ut pellentesque elit molestie et. Nulla suscipit elementum
+                    tortor. Morbi at eros urna. Phasellus nec dapibus eros. Vivamus rhoncus sed magna ut blandit. Ut ut
+                    venenatis enim. Donec et tortor quis purus tempor aliquam id vel nisl. Interdum et malesuada fames
+                    ac
+                    ante ipsum primis in faucibus. Maecenas accumsan sapien et neque commodo tempus. Proin id pulvinar
+                    magna, et convallis tellus. Nam mattis, risus eu tempor porttitor, odio nisl semper lorem, sed
+                    scelerisque ligula eros in orci. Quisque ut libero sit amet nisi finibus eleifend sagittis ut elit.
+                </p>
             </div>
-        </section>
-        
-        <section>
-            <div class="section-title">Chimken</div>
-            <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in libero augue. Sed purus sapien,
-                gravida
-                id ipsum vitae, sollicitudin consequat enim. Vivamus ullamcorper mattis metus, nec mollis dolor
-                malesuada sed.
-                Phasellus vitae sem odio. Sed id augue a mi vulputate consequat ac et arcu. Mauris nec viverra purus.
-                Morbi at
-                sodales leo, sit amet porta nisi. Morbi tincidunt, nunc sed laoreet molestie, neque massa viverra velit,
-                sit
-                amet luctus odio quam ultrices nibh. Praesent blandit metus non enim eleifend tempor. Curabitur lectus
-                metus,
-                molestie sodales orci eu, commodo convallis leo. Etiam dignissim sit amet tellus quis ultrices.
-                Vestibulum
-                rhoncus euismod elit in aliquam. Aliquam id facilisis libero.
-            </div>
-        </section>
-        
-        <section>
-            <div class="section-title">Pork</div>
-            <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in libero augue. Sed purus sapien,
-                gravida
-                id ipsum vitae, sollicitudin consequat enim. Vivamus ullamcorper mattis metus, nec mollis dolor
-                malesuada sed.
-                Phasellus vitae sem odio. Sed id augue a mi vulputate consequat ac et arcu. Mauris nec viverra purus.
-                Morbi at
-                sodales leo, sit amet porta nisi. Morbi tincidunt, nunc sed laoreet molestie, neque massa viverra velit,
-                sit
-                amet luctus odio quam ultrices nibh. Praesent blandit metus non enim eleifend tempor. Curabitur lectus
-                metus,
-                molestie sodales orci eu, commodo convallis leo. Etiam dignissim sit amet tellus quis ultrices.
-                Vestibulum
-                rhoncus euismod elit in aliquam. Aliquam id facilisis libero.
-            </div>
-        </section>
+        </div>
     </div>
-        
-    </body>
-    
-    
-    </html>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
