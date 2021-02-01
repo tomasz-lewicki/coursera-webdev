@@ -72,3 +72,30 @@ function catName(name) {
   console.log("My cat's name is " + name);
 }
 ```
+
+# Arrays
+Arrays are also objects in JS. So this is perfectly valid:
+```js
+arr = new Array();
+arr[0] = 'd';
+arr[1] = 'u';
+arr[2] = 'p';
+arr.hehe = 555;
+```
+
+# Closures
+Preserve outer lexical environment for the function.
+
+# Namespaces
+* There are no namespaces in javascript.
+* You can bind functions and variables to an object in order to achieve namespace-like behavior
+
+# IIFE 
+* Immediately invoked function expression
+* We can use it to create fake namespaces
+* Example:
+```js
+(function (name) {
+    console.log("hello " + name);
+})("Tomek"); // <- this line immediately executes the function
+```
