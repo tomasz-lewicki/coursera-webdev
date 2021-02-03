@@ -93,11 +93,11 @@ function buildAndShowHomeHTML (categories) {
   $ajaxUtils.sendGetRequest(
     homeHtmlUrl,
     function (homeHtml) {
-
       var chosenCategoryShortName = chooseRandomCategory(categories).short_name;
-      var htmlSnippet = insertProperty(homeHtml, 'short_name', chosenCategoryShortName);
-      insertHtml("#main-content",htmlSnippet);
-
+      console.log(chosenCategoryShortName);
+      var htmlSnippet = insertProperty(homeHtml, 'randomCategoryShortName', "\'"+chosenCategoryShortName + "\'");
+      console.log(htmlSnippet);
+      insertHtml("#main-content", htmlSnippet);
     },
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
 }
