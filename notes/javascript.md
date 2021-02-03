@@ -99,3 +99,37 @@ Preserve outer lexical environment for the function.
     console.log("hello " + name);
 })("Tomek"); // <- this line immediately executes the function
 ```
+
+# DOM 
+
+* `document` is a special object that lets us access the html elements in the web page
+* `document instanceof HTMLDocument` evaluates to `true`
+* Place your js at the end of the `body`.
+* Why? so all ids are loaded, and you can get their objects by `document.getElementById()`
+
+
+### Methods to get html elements from DOM
+
+- `document.getElementById()`
+- `document.querySelector("h1")` _(gets the first `h1` elem)_
+- `document.querySelectorAll(".example-class")` _(returns a NodeList of elements)_
+
+### Events
+- `onclick`, `onblur`, etc.
+- you can register events either:
+    + directly in html
+    ```html
+    <button onclick="sayHello();"></button> // `this` points to window
+    ```
+    + by registering events in javascript (doesn't pollute your html):
+    ```js
+    document.querySelector("button").onclick = sayHello; // `this` points to button (somewhat more flexible)
+    ```
+    +  
+
+
+# AJAX
+
+- HTTP: a request/response stateless protocol
+- _URI_: uniform resource identifier `api/v2/measurements`
+- _URL_: uniform resource locator `http://air.com/api/v2/measurements`
